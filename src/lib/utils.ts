@@ -33,9 +33,12 @@ export function integerToHexAndText(input: Uint8Array | Uint16Array) {
 }
 
 export function hexCounter(length: number, padLength: number): string[] {
-  const hexCounter = Array.from({ length: length }, (_, i) =>
-    decimalToHex(i).padStart(padLength, "0")
-  );
+  let hexIndex = 0;
+  const hexCounter = Array.from({ length: length + 1 }, (_, i) => {
+    const el = decimalToHex(hexIndex).padStart(padLength, "0");
+    hexIndex += 16;
+    return el;
+  });
   return hexCounter;
 }
 
