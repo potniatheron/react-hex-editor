@@ -8,7 +8,7 @@ import HexViewerContent from "./HexViewerContent";
 export default function HexViewer(props: HexViewerProps) {
   /* 
     (1) Further operations on data for visualization purposes are abstracted away in a prepareData() utility function
-    (2) Results are passed as props used to populate each HexViewer sub-component
+    (2) Results are passed as props and used to populate each HexViewer sub-component
   */
   const [data, setData] = useState<Data>();
   const [highlightIndices, setHighlightIndices] = useState<Indices | null>();

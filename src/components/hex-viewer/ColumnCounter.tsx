@@ -1,10 +1,6 @@
 import { CounterProps } from "../../lib/models";
 
 export default function ColumnCounter(props: CounterProps) {
-  /* 
-    - Zero-index hex counter for 16 columns making up the content rows
-    - Empty grid columns are adedd for alignment purpoes
-  */
   const isInColumn = (i) => {
     if (!props.highlightIndices) return false;
     return props.highlightIndices.columnIndex === i;

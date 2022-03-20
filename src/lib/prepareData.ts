@@ -6,7 +6,7 @@ export default function prepareData(
   input: string | Uint8Array | Uint16Array
 ): Data {
   /* 
-    This utility function abstracts all of the necessaary operations to correctly render data in the HexViewer components
+    This utility function abstracts all of the necessary operations to correctly render data in the HexViewer components
     (1) Flow is divided according to input type (text file or binary file, e.g. image)
     (2) A prepareRows method creates the relevant data structure according to the editor column size
     (3) Target output is a Data object that always contains both a HEX and a TEXTUAL representation of the uploaded fle
