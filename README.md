@@ -1,7 +1,7 @@
 # React Hex Editor
 ## Fiskaly Coding Challenge Presentation
 ### Overview
-Hex Editor is a read-only component that takes a file input and displays its content side by side, in the form of both numeric values (expressed in hexadecimal form) and corresponding chars. 
+Hex Editor is a read-only component that takes a file input and displays its content side by side, in the form of both numeric values (expressed in hexadecimal form) and corresponding UTF chars. 
 
 ![screely-1647812951518](https://user-images.githubusercontent.com/26926683/159187397-3e6e41af-07f1-412b-9e64-e4bf78f2e722.png)
 
@@ -26,7 +26,7 @@ Hex Editor is a read-only component that takes a file input and displays its con
 
 **AlertModal.tsx** | Displays a message when some text is copied to clipboard an has a 2000ms timeout.
 
-**prepareData.ts** | Utility function abstracting all of the necessary operations to correctly render data in the HexViewer components. Flow is divided according to input type (text file or binary file, e.g. image). Target output is a Data object that always contains both a HEX and a TEXTUAL representation of the uploaded fle
+**prepareData.ts** | Utility function abstracting all of the necessary operations to correctly render data in the HexViewer components. Flow is divided according to input type (text file or binary file, e.g. image). Target output is a Data object that always contains both a HEX and a TEXTUAL representation of the uploaded fle.
 
 **utils.ts** | Utility file containing helper functions e.g. `decimalToHex()`, `textToHex()`, `integerToHexAndText()`, `hexCounter()`, `getRange()`.
 
