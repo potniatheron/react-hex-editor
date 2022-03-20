@@ -33,8 +33,8 @@ export default function prepareData(
   }
   /* Create HEX counter */
   const outputRows = preparedData.hexRows.length;
-  preparedData.rowCounter = hexCounter(outputRows, 8);
-  preparedData.columnCounter = hexCounter(16, 2);
+  preparedData.rowCounter = hexCounter(outputRows, 8, 16);
+  preparedData.columnCounter = hexCounter(EDITOR_COLUMNS, 2, 1);
 
   return preparedData;
 }
