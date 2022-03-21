@@ -1,5 +1,4 @@
 # React Hex Editor
-## Fiskaly Coding Challenge Presentation
 ### Overview
 Hex Editor is a read-only component that takes a file input and displays its content side by side, in the form of both numeric values (expressed in hexadecimal form) and corresponding UTF chars. 
 
